@@ -1,0 +1,82 @@
+(kicad_sch (version 20230121) (generator eeschema)
+
+  (uuid 6f128f22-9cbc-4f0e-a584-e54a559c0e90)
+
+  (paper "A4")
+
+  (lib_symbols
+  )
+
+
+  (sheet (at 43.18 34.29) (size 30.48 15.24) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid 4b4cc07c-2d28-45e0-949f-801924f1d6e2)
+    (property "Sheetname" "Mcu" (at 43.18 33.5784 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "Mcu.kicad_sch" (at 43.18 50.1146 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "Switch Panel Rev 1"
+        (path "/6f128f22-9cbc-4f0e-a584-e54a559c0e90" (page "2"))
+      )
+    )
+  )
+
+  (sheet (at 196.85 35.56) (size 25.4 16.51) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid 73b16806-b4e2-4e79-bcc3-4691edba2e1c)
+    (property "Sheetname" "Switches" (at 196.85 34.8484 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "Switches.kicad_sch" (at 196.85 52.6546 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "Switch Panel Rev 1"
+        (path "/6f128f22-9cbc-4f0e-a584-e54a559c0e90" (page "5"))
+      )
+    )
+  )
+
+  (sheet (at 97.79 34.29) (size 27.94 15.24) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid 7b149eab-0943-4350-9756-deb2bb4096f5)
+    (property "Sheetname" "Power Regulation" (at 97.79 33.5784 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "PowerRegulation.kicad_sch" (at 97.79 50.1146 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "Switch Panel Rev 1"
+        (path "/6f128f22-9cbc-4f0e-a584-e54a559c0e90" (page "3"))
+      )
+    )
+  )
+
+  (sheet (at 147.32 34.29) (size 27.94 15.24) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid ba09ce85-9165-4188-a7cd-07281c0b1d0d)
+    (property "Sheetname" "Canbus" (at 147.32 33.5784 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "CanBus.kicad_sch" (at 147.32 50.1146 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "Switch Panel Rev 1"
+        (path "/6f128f22-9cbc-4f0e-a584-e54a559c0e90" (page "4"))
+      )
+    )
+  )
+
+  (sheet_instances
+    (path "/" (page "1"))
+  )
+)
