@@ -1,4 +1,4 @@
-22270371548025381
+22272066007795736
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -63195,6 +63195,13 @@ L9966CB-TR
 0
 49
 49
+MyKiCadLibraries
+Tie Wrap Connector
+
+
+0
+4
+4
 MyKiCadLibraries
 V7805-500-SMT
 

@@ -59,6 +59,23 @@
     )
   )
 
+  (sheet (at 43.18 64.77) (size 31.75 20.32) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid 89aa6e42-a788-4017-8ec8-6e35458d7334)
+    (property "Sheetname" "Connector" (at 43.18 64.0584 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "Connector.kicad_sch" (at 43.18 85.6746 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "Switch Panel Rev 1"
+        (path "/6f128f22-9cbc-4f0e-a584-e54a559c0e90" (page "6"))
+      )
+    )
+  )
+
   (sheet (at 147.32 34.29) (size 27.94 15.24) (fields_autoplaced)
     (stroke (width 0.1524) (type solid))
     (fill (color 0 0 0 0.0000))

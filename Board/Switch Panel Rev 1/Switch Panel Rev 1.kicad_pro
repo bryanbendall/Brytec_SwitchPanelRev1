@@ -45,7 +45,7 @@
         "silk_text_thickness": 0.15,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.2032
+          "min_clearance": 0.15239999999999998
         }
       },
       "diff_pair_dimensions": [
@@ -504,6 +504,10 @@
     [
       "73b16806-b4e2-4e79-bcc3-4691edba2e1c",
       "Switches"
+    ],
+    [
+      "89aa6e42-a788-4017-8ec8-6e35458d7334",
+      "Connector"
     ]
   ],
   "text_variables": {}
