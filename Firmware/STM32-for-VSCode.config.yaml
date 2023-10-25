@@ -76,6 +76,11 @@ excludes:
   - "**/Example/**"
   - "**/example/**"
   - "**_template.*"
+  - BrytecConfigEmbedded/Boards/ArduinoMegaTest.cpp
+  - BrytecConfigEmbedded/Boards/ArduinoUnoTest.cpp
+  - BrytecConfigEmbedded/Boards/DesktopSimulation.cpp
+  - Stm32Files/L9966.cpp
+  - Stm32Files/PwmDriver.cpp
 
 
 # Include directories (directories containing .h or .hpp files)
@@ -88,6 +93,8 @@ includeDirectories:
   - Core/Src/**
   - Core/Lib/**
   - App/**
+  - BrytecConfigEmbedded/**
+  - Stm32Files/**
 
 
 # Files that should be included in the compilation.
@@ -100,6 +107,8 @@ sourceFiles:
   - Core/Src/**
   - Core/Lib/**
   - App/**
+  - BrytecConfigEmbedded/**
+  - Stm32Files/**
 
 
 # When no makefile is present it will show a warning pop-up.
