@@ -4,15 +4,28 @@
 #include "EBrytecApp.h"
 #include "UsDelay.h"
 #include "Usb.h"
+#include "Ws2812.h"
 #include "stm32g4xx_hal.h"
 #include <stdint.h>
 
 // bool lastIgntionPowerState = false;
 
+void ledTest()
+{
+    Ws2812::init();
+
+    while (1) {
+        Ws2812::setPixel(0, 255, 0, 0);
+        HAL_Delay(1000);
+        Ws2812::setPixel(0, 0, 255, 0);
+        HAL_Delay(1000);
+        Ws2812::setPixel(0, 0, 0, 255);
+        HAL_Delay(1000);
+    }
+}
+
 void cppMain()
 {
-    // DWT_Delay_Init();
-
     Brytec::EBrytecApp::initalize();
 
     if (Brytec::EBrytecApp::isDeserializeOk())

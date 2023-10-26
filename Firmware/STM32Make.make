@@ -77,6 +77,7 @@ USB_Device/Target/usbd_conf.c
 
 CPP_SOURCES = \
 App/SwitchPanelRev1Board.cpp \
+App/Ws2812.cpp \
 App/cppMain.cpp \
 BrytecConfigEmbedded/Can/EBrytecCan.cpp \
 BrytecConfigEmbedded/Can/ECanCommandQueue.cpp \
