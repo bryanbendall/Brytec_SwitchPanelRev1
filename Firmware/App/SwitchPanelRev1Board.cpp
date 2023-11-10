@@ -5,6 +5,7 @@
 #include "FramDeserializer.h"
 #include "SwitchPanelRev1Defs.h"
 #include "Usb.h"
+#include "Ws2812.h"
 #include "gpio.h"
 
 namespace Brytec {
@@ -65,10 +66,33 @@ void BrytecBoard::setupPin(uint16_t index, IOTypes::Types type)
 
 void BrytecBoard::shutdownAllPins()
 {
+    Ws2812::setAll(0, 0, 0);
 }
 
 float BrytecBoard::getPinValue(uint16_t index, IOTypes::Types type)
 {
+    switch (index) {
+    case BT_PIN_Button_1:
+        return !HAL_GPIO_ReadPin(Sw1_GPIO_Port, Sw1_Pin);
+    case BT_PIN_Button_2:
+        return !HAL_GPIO_ReadPin(Sw2_GPIO_Port, Sw2_Pin);
+    case BT_PIN_Button_3:
+        return !HAL_GPIO_ReadPin(Sw3_GPIO_Port, Sw3_Pin);
+    case BT_PIN_Button_4:
+        return !HAL_GPIO_ReadPin(Sw4_GPIO_Port, Sw4_Pin);
+    case BT_PIN_Button_5:
+        return !HAL_GPIO_ReadPin(Sw5_GPIO_Port, Sw5_Pin);
+    case BT_PIN_Button_6:
+        return !HAL_GPIO_ReadPin(Sw6_GPIO_Port, Sw6_Pin);
+    case BT_PIN_Button_7:
+        return !HAL_GPIO_ReadPin(Sw7_GPIO_Port, Sw7_Pin);
+    case BT_PIN_Button_8:
+        return !HAL_GPIO_ReadPin(Sw8_GPIO_Port, Sw8_Pin);
+
+    default:
+        break;
+    }
+
     return 0.0f;
 }
 
@@ -91,6 +115,15 @@ float BrytecBoard::getPinCurrent(uint16_t index)
 
 void BrytecBoard::setPinValue(uint16_t index, IOTypes::Types type, float value)
 {
+    if (index >= BT_PIN_Light_1 && index <= BT_PIN_Light_8) {
+
+        uint32_t color = (uint32_t)value;
+        uint8_t r = color & 0xFF;
+        uint8_t g = (color >> 8) & 0xFF;
+        uint8_t b = (color >> 16) & 0xFF;
+
+        Ws2812::setPixel(index - BT_PIN_Light_1, r, g, b);
+    }
 }
 
 void BrytecBoard::sendBrytecCan(CanExtFrame frame)

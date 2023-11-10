@@ -73,6 +73,8 @@ void Error_Handler(void);
 #define Memory_SS_GPIO_Port GPIOC
 #define Memory_Wp_Pin GPIO_PIN_0
 #define Memory_Wp_GPIO_Port GPIOB
+#define User_Led_Pin GPIO_PIN_1
+#define User_Led_GPIO_Port GPIOB
 #define Sw1_Pin GPIO_PIN_14
 #define Sw1_GPIO_Port GPIOB
 #define Sw6_Pin GPIO_PIN_15
