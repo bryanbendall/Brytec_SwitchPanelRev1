@@ -12,8 +12,6 @@
 
 void cppMain()
 {
-    Ws2812::init();
-
     Brytec::EBrytecApp::initalize();
 
     if (Brytec::EBrytecApp::isDeserializeOk())
@@ -22,6 +20,8 @@ void cppMain()
         printf("Deserialize FAIL\n");
 
     CanBus::start();
+
+    Ws2812::init();
 
     while (1) {
 
