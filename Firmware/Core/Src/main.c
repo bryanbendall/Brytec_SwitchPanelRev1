@@ -20,10 +20,10 @@
 #include "main.h"
 #include "dma.h"
 #include "fdcan.h"
-#include "gpio.h"
 #include "spi.h"
 #include "tim.h"
 #include "usb_device.h"
+#include "gpio.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
