@@ -27,6 +27,8 @@ void cppMain()
 
         Usb::update();
 
+        Brytec::EBrytecApp::processCanCommands();
+
         // Brytec //////////////////////////////
         static uint64_t lastMillis = 0;
         uint64_t difference = HAL_GetTick() - lastMillis;
