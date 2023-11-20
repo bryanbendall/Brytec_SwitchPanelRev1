@@ -82,6 +82,7 @@ App/SwitchPanelRev1Board.cpp \
 App/Ws2812.cpp \
 App/cppMain.cpp \
 BrytecConfigEmbedded/Can/EBrytecCan.cpp \
+BrytecConfigEmbedded/Can/ECanBus.cpp \
 BrytecConfigEmbedded/Can/ECanCommandQueue.cpp \
 BrytecConfigEmbedded/Can/EPinStatusQueue.cpp \
 BrytecConfigEmbedded/Deserializer/BinaryArrayDeserializer.cpp \
