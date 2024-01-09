@@ -112,6 +112,7 @@ BrytecConfigEmbedded/Nodes/EOrNode.cpp \
 BrytecConfigEmbedded/Nodes/EPIDNode.cpp \
 BrytecConfigEmbedded/Nodes/EPinCurrentNode.cpp \
 BrytecConfigEmbedded/Nodes/EPushButtonNode.cpp \
+BrytecConfigEmbedded/Nodes/ERacepakSwitchPanelNode.cpp \
 BrytecConfigEmbedded/Nodes/ESwitchNode.cpp \
 BrytecConfigEmbedded/Nodes/EToggleNode.cpp \
 BrytecConfigEmbedded/Nodes/ETwoStageNode.cpp \

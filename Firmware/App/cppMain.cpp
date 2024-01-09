@@ -19,8 +19,6 @@ void cppMain()
     else
         printf("Deserialize FAIL\n");
 
-    CanBus::start();
-
     Ws2812::init();
 
     while (1) {
