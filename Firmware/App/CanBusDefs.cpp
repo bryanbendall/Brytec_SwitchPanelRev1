@@ -1,8 +1,6 @@
-#pragma once
+#include "CanBusDefs.h"
 
 #include "SwitchPanelRev1Defs.h"
-#include "fdcan.h"
-#include <stdint.h>
 
 namespace CanBusDefs {
 

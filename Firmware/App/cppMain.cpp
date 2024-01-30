@@ -2,6 +2,7 @@
 
 #include "CanBus.h"
 #include "EBrytecApp.h"
+#include "Fram.h"
 #include "UsDelay.h"
 #include "Usb.h"
 #include "Ws2812.h"
@@ -12,6 +13,8 @@
 
 void cppMain()
 {
+    Fram::init(&hspi1);
+
     Brytec::EBrytecApp::initalize();
 
     if (Brytec::EBrytecApp::isDeserializeOk())
