@@ -81,6 +81,7 @@ excludes:
   - BrytecConfigEmbedded/Boards/DesktopSimulation.cpp
   - Stm32Files/L9966.cpp
   - Stm32Files/PwmDriver.cpp
+  - Stm32Files/TLE94112.cpp
 
 
 # Include directories (directories containing .h or .hpp files)

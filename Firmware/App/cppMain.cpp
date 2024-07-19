@@ -3,12 +3,14 @@
 #include "CanBus.h"
 #include "EBrytecApp.h"
 #include "Fram.h"
+#include "MsTimeout.h"
 #include "UsDelay.h"
 #include "Usb.h"
 #include "Ws2812.h"
 #include "stm32g4xx_hal.h"
 #include <stdint.h>
 
+MsTimeout brytecMs(10);
 // bool lastIgntionPowerState = false;
 
 void cppMain()
@@ -30,15 +32,7 @@ void cppMain()
 
         Brytec::EBrytecApp::processCanCommands();
 
-        // Brytec //////////////////////////////
-        static uint64_t lastMillis = 0;
-        uint64_t difference = HAL_GetTick() - lastMillis;
-        if (difference >= 10) {
-            float timestep = ((float)difference * 0.001f);
-            lastMillis = HAL_GetTick();
-
-            Brytec::EBrytecApp::update(timestep);
-        }
-        /////////////////////////////////////////
+        if (brytecMs.isTimeout())
+            Brytec::EBrytecApp::update(brytecMs.getTimestepMs());
     }
 }
